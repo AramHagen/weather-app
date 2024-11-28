@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 15px;
+}
+
 // Add custom SCSS styles here
 $primary-color: #3490dc;
 
 .custom-class {
   @apply bg-blue-500 text-white p-4;
   color: $primary-color;
+}
+
+.bg-color{
+  background: radial-gradient(circle, #45278B 0%, #2E335A 100%);
+  /* Additional styles */
+  margin: 0;
+  height: 100vh; /* Ensure it covers the full viewport */
+}
+
+body{
+  background-color:#272121
 }

@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>App Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./dist/tailwind.css">
 </head>
-<body>
+<body class="font-inter">
+<section>
+    <div class="container h-screen mx-auto flex justify-center items-center ">
+        <div class="bg-violentViolet relative bg-auto bg-[url('/assets/images/background-image-login.svg')] bg-[top_right] flex items-center justify-center
+ bg-no-repeat rounded-[44px] p-[50px] size-full max-w-[478px] max-h-[844px]">
+            <div id="login-container" class="pt-60">
+                <form id="login-form">
+                    <div class="pb-6">
+                        <h2 class="text-6xl uppercase font-semibold text-white pb-4">Sign in</h2>
+                        <div class="sm:col-span-4 pb-4">
+                            <label for="username" class="block font-medium text-white">Username</label>
+                            <div class="mt-2">
+                                <input id="username" name="username" type="text" autocomplete="off"
+                                       placeholder="Username"
+                                       class="block w-full rounded-lg border-0 h-14 text-base placeholder-gray-400 indent-2.5 text-white bg-blackcurrant ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                                <p id="username-error" class="error mt-1 indent-2.5 text-sm/6 text-red-500 hidden">Please enter your username.</p>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-4">
+                            <label for="password" class="block font-medium text-white">Password</label>
+                            <div class="mt-2">
+                                <input id="password" name="password" type="text" autocomplete="off"
+                                       placeholder="Password"
+                                       class="block w-full rounded-lg border-0 h-14 text-base placeholder-gray-400 indent-2.5 text-white bg-blackcurrant ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                                <p id="password-error" class="error mt-1 indent-2.5 text-sm/6  text-red-500 hidden">Please enter your password.</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-6">
+                            <div class="relative flex gap-x-3">
+                                <div class="flex h-6 items-center">
+                                    <input id="location-permission" name="location-permission" type="checkbox"
+                                           class="size-4 cursor-pointer rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                </div>
+                                <div class="text-sm/6">
+                                    <label for="location-permission" class="font-medium text-white">Current Location</label>
+                                    <p class="text-gray-400">Allow access to your current location for weather
+                                        updates</p>
+                                    <p id='location-error' class="error mt-1 text-sm/6 text-red-500 hidden">Allow location access</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-end gap-x-6">
+                        <button type="submit"
+                                class="rounded-2xl bg-[linear-gradient(90deg,_#501794_0%,_#3E70A1_100%)] h-14 w-full bg-indigo-600 px-3 py-2 text-lg  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="absolute bottom-4 left-0 right-0 text-sm/6 text-center text-gray-400">Copyright by <a
+                    href="https://github.com/AramHagen">Aram Hagen</a></div>
+        </div>
+    </div>
+</section>
 <script src="./scripts/main.js"></script>
 </body>
 </html>
