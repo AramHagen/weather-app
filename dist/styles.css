@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-.custom-class {
-  @apply bg-blue-500 text-white p-4;
-  color: #3490dc;
-}
-
-/*# sourceMappingURL=styles.css.map */
