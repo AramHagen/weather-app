@@ -855,6 +855,10 @@ video {
   background-image: url('/assets/images/background-image-login.jpg');
 }
 
+.bg-\[url\(\'\.\/assets\/images\/background-image-login\.jpg\'\)\] {
+  background-image: url('./assets/images/background-image-login.jpg');
+}
+
 .bg-auto {
   background-size: auto;
 }
