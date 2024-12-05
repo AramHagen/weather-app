@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "sass styles/main.scss dist/styles.css && npx tailwindcss -i ./dist/styles.css -o ./dist/tailwind.css --watch",
     "watch:css": "sass --watch styles/main.scss:dist/styles.css & npx tailwindcss -i ./dist/styles.css -o ./dist/tailwind.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-browser-runner runSpecs && npx jasmine-browser-runner serve"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,10 @@
     "postcss": "^8.4.49",
     "sass": "^1.81.0",
     "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "jasmine": "^5.5.0",
+    "jasmine-browser-runner": "^2.5.0",
+    "jasmine-core": "^5.5.0"
   }
 }
