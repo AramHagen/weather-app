@@ -51,6 +51,10 @@ module.exports = {
         },
         fontFamily: {
             'inter': ['Inter', 'sans-serif']
+        },
+        backgroundImage: {
+            'login-bg': "url('/weather-app/assets/images/background-image-login.jpg')",
+            'login-bg-local': "url('./assets/images/background-image-login.jpg')"
         }
     },
     plugins: [],
