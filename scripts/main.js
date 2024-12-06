@@ -52,6 +52,7 @@ showPasswordElement.addEventListener('click', () => {
 })
 
 loginFormElement.addEventListener('submit', async (event) => {
+    debugger;
     event.preventDefault();
     const usernameValidity = checkRequiredValidation(usernameElement);
     const passwordValidity = checkRequiredValidation(passwordElement);
@@ -88,10 +89,6 @@ async function showCurrentWeatherInfo() {
     weatherConditionElm.innerText = data.current.condition.text;
     maxTempElm.innerText = `${data.forecast.forecastday[0].day.maxtemp_f}°`;
     lowTempElm.innerText = `${data.forecast.forecastday[0].day.mintemp_f}°`;
-
-    // loginContainerElement.classList.add('hidden');
-    // loadingElement.classList.add('hidden');
-    // weatherContainerElement.classList.remove('hidden');
 }
 
 async function showWeeklyForecast() {
