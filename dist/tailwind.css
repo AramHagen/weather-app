@@ -671,6 +671,10 @@ video {
   height: 3.5rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -691,12 +695,20 @@ video {
   max-height: 844px;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .max-w-\[390px\] {
   max-width: 390px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .transform {
@@ -729,6 +741,14 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .gap-8 {
@@ -773,6 +793,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+
 .rounded-\[44px\] {
   border-radius: 44px;
 }
@@ -794,14 +818,27 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+.border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
 }
 
 .bg-blackcurrant {
   --tw-bg-opacity: 1;
   background-color: rgb(25 7 51 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blueGem {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 49 157 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blueGemOP {
+  background-color: rgba(72,49,157,.2);
 }
 
 .bg-gray-800\/75 {
@@ -848,6 +885,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-\[50px\] {
@@ -944,11 +986,6 @@ video {
   text-transform: uppercase;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -962,6 +999,11 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .placeholder-gray-400::-moz-placeholder {
