@@ -105,7 +105,7 @@ function eventListeners() {
   }
 
   async function showWeeklyForecast(weatherCondition) {
-    const todayAbbreviation = getDayAbbreviation(new Date());
+    const todayAbbreviation = getDayAbbreviation();
     for (const forecast of weatherCondition.forecastDetails) {
       const item = document.createElement('div');
       item.classList.add(
